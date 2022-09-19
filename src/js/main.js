@@ -27,6 +27,7 @@ document.getElementById("isbn-search-btn").addEventListener("click", () => {
   const isbn = document.getElementById("isbn-search").value;
 
   callApi(isbn).then(data => {
+    // forの中でBookインスタンスを代入するため宣言
     let current_book;
 
     for (let key in data) {
@@ -43,7 +44,10 @@ document.getElementById("isbn-search-btn").addEventListener("click", () => {
       );
     }
 
-    console.log(current_book);
+    // console.log(current_book);
+
+    // この関数でAPIから取得した本の情報を表示
+    // createBookCard(current_book);
   });
 });
 
