@@ -11,15 +11,15 @@ const config = {
 }
 
 class Book {
-  constructor(title, cover, authors, description, number_of_pages, publishers, publish_date, categories) {
+  constructor(title, cover, author_list, description, number_of_pages, publisher_list, publish_date, categorie_list) {
     this.title = title;
     this.cover = cover;
-    this.authors = authors;
+    this.author_list = author_list;
     this.description = description;
     this.number_of_pages = number_of_pages;
-    this.publishers = publishers;
+    this.publisher_list = publisher_list;
     this.publish_date = publish_date;
-    this.categories = categories;
+    this.categorie_list = categorie_list;
   }
 }
 
