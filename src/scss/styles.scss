@@ -1,6 +1,10 @@
 // Import all of Bootstrap's CSS
 @import "~bootstrap/scss/bootstrap";
 
+main {
+  display: block;
+}
+
 .book-description {
   display: -webkit-box;
   -webkit-box-orient: vertical;
