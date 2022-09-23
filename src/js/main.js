@@ -51,7 +51,7 @@ document.getElementById("isbn-search-btn").addEventListener("click", () => {
       }
 
       // APIから取得した本の情報を表示
-      createBookCard(current_book, config.target);
+      generateBookCard(current_book, config.target);
     })
     .catch(() => alert("指定されたISBNの本は存在しません。"))
 });
@@ -62,7 +62,7 @@ async function callApi(isbn) {
   return res_json;
 }
 
-function createBookCard(current_book, target) {
+function generateBookCard(current_book, target) {
   clearPage(target);
 
   const card_container = document.createElement("div");
@@ -84,20 +84,28 @@ function createBookCard(current_book, target) {
       <table class="table table-striped">
         <tbody>
           <tr>
-            <th scope="row" class="col-md-4">Page</th>
-            <td class="col-md-8"><span class="m-2">${current_book.number_of_pages}</span></td>
+            <th scope="row" class="col-3 col-md-4">Page</th>
+            <td class="col-9 col-md-8">
+              <p class="m-2">${current_book.number_of_pages}</p>
+            </td>
           </tr>
           <tr>
-            <th scope="row" class="col-md-4">Publisher</th>
-            <td class="col-md-8"><span class="m-2">${current_book.publisher_list}</span></td>
+            <th scope="row" class="col-3 col-md-4">Publisher</th>
+            <td class="col-9 col-md-8">
+              <p class="m-2">${current_book.publisher_list}</p>
+            </td>
           </tr>
           <tr>
-            <th scope="row" class="col-md-4">Published Date</th>
-            <td class="col-md-8"><span class="m-2">${current_book.publish_date}</span></td>
+            <th scope="row" class="col-3 col-md-4">Published Date</th>
+            <td class="col-9 col-md-8">
+              <p class="m-2">${current_book.publish_date}</p>
+            </td>
           </tr>
           <tr>
-            <th scope="row" class="col-md-4">Categories</th>
-            <td class="col-md-8"><span class="m-2">${current_book.categorie_list}</span></td>
+            <th scope="row" class="col-3 col-md-4">Categories</th>
+            <td class="col-9 col-md-8">
+              <p class="m-2">${current_book.categorie_list}</p>
+            </td>
           </tr>
         </tbody>
       </table>
