@@ -1,0 +1,22 @@
+// Import all of Bootstrap's CSS
+@import "~bootstrap/scss/bootstrap";
+
+header > div {
+  max-width: 1000px;
+}
+
+main {
+  max-width: 1000px;
+}
+
+table {
+  // レスポンシブデザインでテーブルの要素がはみ出るのを抑える
+  table-layout: fixed;
+}
+
+.book-description {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 7;
+  overflow: hidden;
+}
