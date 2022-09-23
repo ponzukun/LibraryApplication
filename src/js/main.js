@@ -6,6 +6,10 @@ import '@fortawesome/fontawesome-free/js/fontawesome';
 import '@fortawesome/fontawesome-free/js/solid';
 import '@fortawesome/fontawesome-free/js/regular';
 
+if (process.env.NODE_ENV !== 'production') {
+  console.log('Looks like we are in development mode!');
+}
+
 const config = {
   url: "https://openlibrary.org/api/books?jscmd=data&format=json&bibkeys=ISBN:",
   target: "book-cards"
