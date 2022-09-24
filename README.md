@@ -15,6 +15,7 @@
 ## Reference
 
 - https://openlibrary.org/
+- https://getbootstrap.com/docs/5.2/getting-started/webpack/
 - https://www.youtube.com/playlist?list=PLwM1-TnN_NN4SV6DEs4OtfA51Up6XzTfB
 - https://webpack.js.org/guides/production/
 - https://ybalexdp.hatenablog.com/entry/2020/03/23/github-pages-react-deploy
