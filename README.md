@@ -9,7 +9,7 @@
 - https://ponzukun.github.io/LibraryApplication/
 
 ## Usage
-- ISBNコードを入力して検索ボタンを押すと、ヒットした本の情報が表示されます。
+- ISBNコード(ex. 0439139597)を入力して検索ボタンを押すと、ヒットした本の情報が表示されます。
 - ヒットしない場合はアラートでメッセージが表示されます。
 
 ## Reference
